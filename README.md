@@ -1,6 +1,6 @@
 # 1---->***Sales Engineering - Core Tactical Library (CTL)***
 
-# Screen Shot App---->1 
+# Screen Shot App 
 
 Headless Screen Capture Utility program*.
 Runs in the background and takes full monitor (screen) capture (silently).
