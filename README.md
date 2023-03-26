@@ -40,13 +40,13 @@ To install the Screen Shot App, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install any necessary dependencies (listed in the requirements.txt file or in the file itself). Still doing more dev. probably should create a requirements.txt file.
-3. Run the app using the command `1.1_screen_capture_utility.py`.
+3. Run the app using the command `1.4_screen_capture_utility.py`.
 
 ## Usage
 
 To use the Screen Shot App, follow these steps:
 
-1. Launch the app using the command `1.1_screen_capture_utility.py`.
+1. Launch the app using the command `1.4_screen_capture_utility.py`.
 2. Specify the interval at which you want the app to capture screenshots.
 3. The app will begin capturing screenshots at the specified interval.
 
