@@ -3,10 +3,12 @@
 
 # Screen Shot App
 
-Headless Screen Capture Utility program.
+Headless Screen Capture Utility program*.
 Runs in the background and takes full monitor (screen) capture (silently).
 Meant to be used by Solution Architects (SAs) and Pre-Sales Engineers (SEs) to assist with the creation of configuration ("config") docs and similar project deliverables as well as during requirements gatherwing workshops and during development.
 In the absence of a conference bridge or recording error, the screen shot app also creates redundancy. And for some also usability, I have a maybe baseless theory that auto-screen capture and meeting note rationalization is more efficient that scrolling and buffering through zoom recordings.
+
+--*A headless screen capture utility program is a software tool that enables users to capture screenshots of web pages or applications without displaying the user interface (UI) or graphical user interface (GUI) of the captured content. In other words, it is a program that runs in the background and captures screenshots without the need for any user interaction.
 
 ## Libraries
 
