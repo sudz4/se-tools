@@ -10,14 +10,14 @@ def create_screenshots_folder():
     if not os.path.exists(top_folder_path): # check the top folder path
         os.makedirs(top_folder_path) # if no top folder path, creates a new top folder path
 
-    # Create daily subfolder
+    # create daily subfolder
     current_date = datetime.now().strftime('%Y%m%d_%a')
     subfolder_name = f"{current_date}"
     subfolder_path = os.path.join(top_folder_path, subfolder_name)
     if not os.path.exists(subfolder_path):
         os.makedirs(subfolder_path)
 
-    # Create essential technical library subfolder
+    # create essential technical library subfolder
     essential_library_name = f"{current_date}_ESSENTIAL_TECHNICAL_LIBRARY"
     essential_library_path = os.path.join(subfolder_path, essential_library_name)
     if not os.path.exists(essential_library_path):

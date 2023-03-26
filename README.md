@@ -91,23 +91,3 @@ The malicious app could be designed to evade detection by antivirus software and
 ### Obscure Use Case
 
 1. **Astronomy enthusiasts:** Amateur astronomers can use the Screen Shot App to capture images of celestial events (e.g., meteor showers, lunar eclipses) at specific intervals while using a telescope connected to a computer. This can help create a time-lapse or sequence of the event for further study or sharing with others in the astronomy community.
-
-### Astronauts on the International Space Station
-
-1. **Plant growth experiments:** Astronauts on the ISS can use the Screen Shot App to capture images of plants being grown in microgravity conditions. Regularly capturing images of the plants' growth progress can help researchers on Earth study the effects of microgravity on plant development and physiology.
-* in other words taking screen captures of video?
-
-### Real-life Alien use cases
-
-1. **Alien anatomy documentation:** Researchers could use the Screen Shot App to capture images of an alien body during dissection, providing a visual record of the unique anatomical features discovered during the process. This could aid in the study of extraterrestrial biology and help researchers understand how the alien's body functions.
-
-2. **Alien technology reverse-engineering:** If researchers were to find an advanced spaceship or technology belonging to the alien, they could use the Screen Shot App to capture images of the technology's components and mechanisms. This would help in the process of reverse-engineering, allowing scientists to study the technology's design and possibly develop new innovations based on the findings.
-
-3. **Communication attempts:** In case researchers encounter a living alien and try to establish communication, they could use the Screen Shot App to capture images of any visual cues or symbols used by the alien during the communication attempts. These images could help linguists and scientists decode the alien's language or communication system.
-
-4. **Habitat reconstruction:** If the alien's habitat were discovered, researchers could use the Screen Shot App to capture images of the environment, structures, and objects found within. This would provide valuable information about the alien's culture, lifestyle, and possibly the planet they originated from.
-
-5. **Artifact analysis:** If artifacts or objects belonging to the alien culture were found, the Screen Shot App could be used to capture images of these items during the analysis process. This would help researchers document the artifacts' features, materials, and possible functions, contributing to the understanding of the alien civilization.
-
-
-
