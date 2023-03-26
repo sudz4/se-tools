@@ -4,9 +4,9 @@ import time
 import schedule
 import subprocess
 
-# screenCAPTURE
+# screen CAPTURE
 def create_screenshots_folder():
-    folder_path = '/Users/sudz4/Desktop/PROJECT FOLDER/screen_shot_program_logs' # where to save screenshots
+    folder_path = '/Users/sudz4/Desktop/PROJECTZ/screen_shot_program_logs' # where to save screenshots
     if not os.path.exists(folder_path): # check the folder path 
         os.makedirs(folder_path) # if no folder path, creates a new folder path
     return folder_path
@@ -19,8 +19,11 @@ def take_screenshot(folder_path):
     print(f"Screenshot saved at {screenshot_file}") # save the screenshot (full screen capture) to the folder path
 
 def main():
+    interval = 10 # TOGGLE -> specify the image capture intervals (period between image captures)
+    print(f"Machine screen capture in progress ({interval} second intervals) ...")
+    print("Press control+c to quit or stop running program")
     folder_path = create_screenshots_folder() 
-    schedule.every(10).seconds.do(take_screenshot, folder_path) # TOGGLE -> seconds to create more time in between screenshots
+    schedule.every(interval).seconds.do(take_screenshot, folder_path) # TOGGLE -> seconds to create more time in between screenshots
 
     while True:
         schedule.run_pending()
