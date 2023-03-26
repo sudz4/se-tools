@@ -24,7 +24,8 @@ The following libraries are used in the Screen Shot App:
 There are several use cases for the Screen Shot App, including:
 
 1. Using auto-captured screen shots later for config docs - documents to refer to if we forget how to do something or need to do an update later.
-2. Capturing requirements in the absence of zoom recordings. We might also be able to make the case for it being more efficient to do screen capture. It can be tiring and time-consuming scrolling and buffering through recordings. For me and the reason that I created the program... well the reason I created it was for speed, accuracy, and efficiency. But, for me I am okay with 500-1000 screen shots taken at timestamped intervals during a meeting or a dev session. I am okay with that even if I only grab 3-5 of those screenshots to add to the formal project config doc folder (deliverable, probably with annotated notes, other project data from the project manager, etc.)
+2. Capturing requirements in the absence of zoom recordings. We might also be able to make the case for it being more efficient to do screen capture. It can be tiring and time-consuming scrolling and buffering through recordings. For me and the reason that I created the program... well the reason I created it was for speed, accuracy, and efficiency. But, for me I am okay with 500-1000 screen shots taken at timestamped intervals during a meeting or a dev session. I am okay with that even if I only grab 3-5 of those screenshots to add to the formal project config doc folder (deliverable, probably with annotated notes, other project data from the project manager, etc.).
+3. Click-through DEMOs
 
 ## Background, Notes, & Future Dev Ideas
 
