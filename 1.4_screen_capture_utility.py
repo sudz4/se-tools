@@ -33,8 +33,8 @@ def take_screenshot(folder_path):
     print(f"Screenshot saved at {screenshot_file}") # save the screenshot (full screen capture) to the folder path
 
 def main():
-    interval = 10 # TOGGLE -> specify the image capture intervals (period between image captures)
-    runtime_in_minutes = 5
+    interval = 30 # seconds - TOGGLE -> specify the image capture intervals (period between image captures)
+    runtime_in_minutes = 60 # minutes - TOGGLE -> specify meeting time (or how long you want the program to run for)
     end_time = time.time() + runtime_in_minutes * 60
 
     print(f"Machine screen capture in progress ({interval} second intervals) for {runtime_in_minutes} minutes...")
