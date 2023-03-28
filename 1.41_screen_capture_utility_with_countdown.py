@@ -78,4 +78,5 @@ if __name__ == "__main__":
         print()
 
 # think about using ASCII at launch, details on how to use program(s)
+# sub directory in the sub directory with CLIENT NAME, check if, then create new directory, else (if exists) insert new image file
 """END OF PROGRAM"""
