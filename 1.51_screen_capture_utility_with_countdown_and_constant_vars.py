@@ -7,7 +7,7 @@ from datetime import datetime
 import time # need this for countdown feature
 
 # define CONSTANT variables -> better to use CONSTANTS (usually UPPERCASE as best practice) instead of global variables.
-CLIENT_NAME = 'BOBS_BUTCHER' # define the client name, or project you are working on, a name to be able to find or search for the screen capture files
+CLIENT_NAME = 'UKGTESTco' # define the client name, or project you are working on, a name to be able to find or search for the screen capture files
 CLIENT_NAME = CLIENT_NAME.upper() # just in case to keep thing uniform, evaluate always to UPPERCASE to promote uniformity and mitigate user error
 COUNTDOWN_SECONDS = 5 # countdown to appear in the terminal as a scheduled screenshot is about to be incoming
 INTERVAL = 10 # period between screenshots
@@ -22,19 +22,21 @@ def create_screenshots_folder(client_name):
         os.makedirs(top_folder_path) # if no top folder path, creates a new top folder path
 
     # create daily subfolder
-    current_date = datetime.now().strftime('%Y%m%d_%a') # stores current date as var
-    subfolder_name = f"{current_date}" 
+    current_date_v = datetime.now().strftime('%Y%m%d_%a') # stores current date as var
+    subfolder_name = f"{current_date_v}" 
     subfolder_path = os.path.join(top_folder_path, subfolder_name) # create subfolder path
     if not os.path.exists(subfolder_path):
         os.makedirs(subfolder_path)
 
     # create essential technical library subfolder
+    current_date = datetime.now().strftime('%Y%m%d') # IMPORTANT -> different format than above foler, because the day of week is repetitive.
     essential_library_name = f"{current_date}_ESSENTIAL_TECHNICAL_LIBRARY" # also could be called a "Core Technical Library (CTL)"
     essential_library_path = os.path.join(subfolder_path, essential_library_name) # insert an (empty) ETL library folder -> user can drag KEEP captures here later
     if not os.path.exists(essential_library_path):
         os.makedirs(essential_library_path)
 
     # create client-specific subfolder
+    # IMPORTANT -> the current_date object above is referenced below also
     client_folder_name = f"{current_date}_{client_name}" # create a client or project or sessions specific subfolder with proper uniform naming convention
     client_folder_path = os.path.join(subfolder_path, client_folder_name) # insert client subfolder
     if not os.path.exists(client_folder_path):
