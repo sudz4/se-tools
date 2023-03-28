@@ -1,0 +1,3 @@
+Daily Objectives: {objectives}
+
+Daily Accomplishments {accomplishments}
