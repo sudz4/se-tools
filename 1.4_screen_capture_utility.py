@@ -27,7 +27,7 @@ def create_screenshots_folder():
 
 def take_screenshot(folder_path):
     timestamp = time.strftime("%Y%m%d-%H%M%S") # get the time stamp and format
-    client_name = 'COMPANY' # TOGGLE -> your client's name. this is done for data sorting and retrieval (easily human readable). Use CAPS, easier to read and find quickly with human eyes.
+    client_name = 'INFOCENTER' # TOGGLE -> your client's name. this is done for data sorting and retrieval (easily human readable). Use CAPS, easier to read and find quickly with human eyes.
     screenshot_file = os.path.join(folder_path, f"{timestamp}_{client_name}.png") # joins the timestamp with the client name
     subprocess.run(["screencapture", "-x", screenshot_file]) # screencapture command line tool that comes with macOS
     print(f"Screenshot saved at {screenshot_file}") # save the screenshot (full screen capture) to the folder path
