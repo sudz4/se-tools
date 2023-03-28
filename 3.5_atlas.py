@@ -10,15 +10,18 @@ openai.api_key = OPENAI_API_TOKEN
 
 def complete_prompt(prompt):
     completions = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant that writes notes for your boss and categorizes, corrects, completes, and adds to short form notes (inputs)"},
+        model="gpt-3.5-turbo", # specify the language model
+        messages=[ # array of message objects, including a system message that sets the behavior of the assistant, and one or more user messages containing the input prompts.
+            {"role": "system", "content": "You are an elite executive assistant. You are great at organizing, completing, editing, and adding to partially written notes on your executives behalf (as if you were them)"},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=50,
-        n=1,
-        stop=None,
-        temperature=0.8,
+        max_tokens=100, # increase this value to allow for longer responses, but be careful not to set it too high
+        n=3,# number of responses you want to generate for each input. if you want more options to choose from, increase the value of n.
+        stop=None, # stop when a period is encountered
+        temperature=0.5, # controls the randomness of the generated text -> 
+        ### higher temperature (e.g., 1.0) will produce more random output -> 
+        ### while a lower temperature (e.g., 0.2) will make the output more focused and deterministic. 
+        ### Adjust this value to find a balance between creativity and accuracy.
     )
     return completions.choices[0].message['content'].strip()
 
@@ -42,7 +45,7 @@ def main():
 
         if choice == 1:
             task = input("Enter your task: ")
-            corrected_task = complete_prompt(f"Correct, complete, and add context to the following sentence: {task}.")
+            corrected_task = complete_prompt(f"Correct spelling errors and perform sentence completion for the prompt: {task}.")
             prompt = f"Categorize the following task as either an objective or accomplishment: {corrected_task}"
             category = complete_prompt(prompt).lower()
 
@@ -60,11 +63,12 @@ def main():
             accomplishments = "\n".join(f"- {point}" for point in all_accomplishments)
             
             # Add creative context
-            objectives_prompt = "Perform sentence completion for the following daily objectives, REMEMBER that you are writing this on behalf of me, so you are using I as your pronoun. If you are thiking of say You did x,y,z remember that you are me, so you need to write like.. I have x objective and I accomplished y:\n" + objectives
-            accomplishments_prompt = "Perform sentence completion for the following daily accomplishments, again remembering to output text as if you are me writing about my day's objectives and accomplishments:\n" + accomplishments
+            objectives_prompt = ("Perform sentence completion\n"+ objectives)
+            accomplishments_prompt = ("Perform sentence completion"+ accomplishments)
             creative_objectives = complete_prompt(objectives_prompt).strip()
             creative_accomplishments = complete_prompt(accomplishments_prompt).strip()
-                        # Clear the existing output file before regenerating the content
+
+            # Clear the existing output file before regenerating the content
             with open(log_filename, "w") as f:
                 f.write("")
 
@@ -76,7 +80,6 @@ def main():
             print("Invalid choice. Please try again.")
 
     print("Exiting the program. Goodbye!")
-
 
 if __name__ == "__main__":
     main()
