@@ -7,7 +7,7 @@ from datetime import datetime
 import time # need this for countdown feature
 
 # define CONSTANT variables -> better to use CONSTANTS (usually UPPERCASE as best practice) instead of global variables.
-CLIENT_NAME = 'UKGTESTco' # define the client name, or project you are working on, a name to be able to find or search for the screen capture files
+CLIENT_NAME = 'CYBR504' # define the client name, or project you are working on, a name to be able to find or search for the screen capture files
 CLIENT_NAME = CLIENT_NAME.upper() # just in case to keep thing uniform, evaluate always to UPPERCASE to promote uniformity and mitigate user error
 COUNTDOWN_SECONDS = 5 # countdown to appear in the terminal as a scheduled screenshot is about to be incoming
 INTERVAL = 10 # period between screenshots
